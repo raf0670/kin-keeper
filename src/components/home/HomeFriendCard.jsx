@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
 
+const statusColors = {
+    "on-track": "bg-green-500",
+    "overdue": "bg-red-500",
+    "almost due": "bg-yellow-500"
+};
+
 const HomeFriendCard = ({ friend }) => {
     const { tags, status, days_since_contact, name, picture } = friend;
     return (
@@ -13,16 +19,17 @@ const HomeFriendCard = ({ friend }) => {
 
             <div className='flex gap-2 font-semibold justify-center items-center'>
                 {
-                    tags.map(tag => {
+                    tags.map((tag, idx) => {
                         return (
-                            <div key={friend.id} className='badge badge-xs bg-[#CBFADB] pt-2 pb-2.5'>
-                                ${tag}
+                            <div key={idx} className='rounded-4xl bg-[#CBFADB] pb-0.5 px-2'>
+                                <p>{tag}</p>
                             </div>
                         );
                     })
                 }
             </div>
 
+            <p className={`text-white px-3 badge badge-sm pb-0.5 font-semibold rounded-full ${statusColors[status]}`}>{status}</p>
         </div>
     );
 };

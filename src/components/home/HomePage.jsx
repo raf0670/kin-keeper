@@ -2,6 +2,7 @@ import React from 'react';
 import HomeStatCard from './HomeStatCard';
 import friends from "../../../public/friends.json";
 import HomeFriendCard from './HomeFriendCard';
+import Link from 'next/link';
 // const promise = async() => {
 //     const res = await fetch("/friends.json");
 //     return res.json();
@@ -13,7 +14,7 @@ const HomePage = () => {
     const overdueCount = friends.filter(friend => friend.status === "overdue").length;
 
     return (
-        <div className='text-center w-11/12 sm:w-10/12 mx-auto'>
+        <div className='text-center w-11/12 sm:w-10/12 mx-auto mt-20'>
             <div className='space-y-8'>
                 <h1 className='font-bold text-6xl'>Friends to keep close in your life</h1>
                 <p className='text-[#64748B] max-w-xl mx-auto leading-5'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
@@ -29,10 +30,10 @@ const HomePage = () => {
 
             <h2 className='font-semibold text-start text-2xl mb-6'>Your Friends</h2>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 '>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-20'>
                 {
                     friends.map(friend => {
-                        return <HomeFriendCard key={friend.id} friend={friend}></HomeFriendCard>
+                        return <Link key={friend.id} href={`/${friend.id}`}><HomeFriendCard friend={friend}></HomeFriendCard></Link>
                     })
                 }
             </div>
