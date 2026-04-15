@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Sarah Ahmed",
+        "picture": "https://randomuser.me/api/portraits/women/1.jpg",
+        "email": "sarah.ahmed@gmail.com",
+        "days_since_contact": 25,
+        "status": "overdue",
+        "tags": [
+            "BUET",
+            "Engineering"
+        ],
+        "bio": "Study partner from CSE department. Always helps with complex algorithms.",
+        "goal": 14,
+        "next_due_date": "2026-03-20"
+    },
+    {
+        "id": 2,
+        "name": "Tanvir Hossain",
+        "picture": "https://randomuser.me/api/portraits/men/2.jpg",
+        "email": "tanvir.h@outlook.com",
+        "days_since_contact": 3,
+        "status": "on-track",
+        "tags": [
+            "Basketball",
+            "Teammate"
+        ],
+        "bio": "Point guard for our second division team. We practice every Friday morning.",
+        "goal": 7,
+        "next_due_date": "2026-04-19"
+    },
+    {
+        "id": 3,
+        "name": "Emily Chen",
+        "picture": "https://randomuser.me/api/portraits/women/3.jpg",
+        "email": "emily.dev@yahoo.com",
+        "days_since_contact": 9,
+        "status": "almost due",
+        "tags": [
+            "Competitive Programming",
+            "Codeforces"
+        ],
+        "bio": "Met during an ICPC regional. We discuss DP problems and graph theory.",
+        "goal": 10,
+        "next_due_date": "2026-04-16"
+    },
+    {
+        "id": 4,
+        "name": "Rafiqul Islam",
+        "picture": "https://randomuser.me/api/portraits/men/4.jpg",
+        "email": "rafiq.islam@live.com",
+        "days_since_contact": 45,
+        "status": "overdue",
+        "tags": [
+            "Childhood",
+            "Home Town"
+        ],
+        "bio": "Best friend from school. Currently working in a different city as a software dev.",
+        "goal": 30,
+        "next_due_date": "2026-03-01"
+    },
+    {
+        "id": 5,
+        "name": "Anika Tabassum",
+        "picture": "https://randomuser.me/api/portraits/women/5.jpg",
+        "email": "anika.t@gmail.com",
+        "days_since_contact": 5,
+        "status": "on-track",
+        "tags": [
+            "React",
+            "Web Dev"
+        ],
+        "bio": "Learning full-stack together. Currently focusing on Next.js App Router.",
+        "goal": 7,
+        "next_due_date": "2026-04-17"
+    },
+    {
+        "id": 6,
+        "name": "David Miller",
+        "picture": "https://randomuser.me/api/portraits/men/6.jpg",
+        "email": "david.m@techcorp.com",
+        "days_since_contact": 18,
+        "status": "almost due",
+        "tags": [
+            "Mentor",
+            "Open Source"
+        ],
+        "bio": "Senior dev who helps me with Git workflows and code reviews on GitHub.",
+        "goal": 21,
+        "next_due_date": "2026-04-18"
+    },
+    {
+        "id": 7,
+        "name": "Zarin Subah",
+        "picture": "https://randomuser.me/api/portraits/women/7.jpg",
+        "email": "zarin.subah@edu.com",
+        "days_since_contact": 2,
+        "status": "on-track",
+        "tags": [
+            "University",
+            "Classmate"
+        ],
+        "bio": "Class representative. We usually catch up between lab sessions at BUET.",
+        "goal": 14,
+        "next_due_date": "2026-04-27"
+    },
+    {
+        "id": 8,
+        "name": "Arif Ahmed",
+        "picture": "https://randomuser.me/api/portraits/men/8.jpg",
+        "email": "arif.bball@gmail.com",
+        "days_since_contact": 13,
+        "status": "almost due",
+        "tags": [
+            "Basketball",
+            "High School"
+        ],
+        "bio": "Old teammate. We play occasional pickup games at the local court.",
+        "goal": 14,
+        "next_due_date": "2026-04-16"
+    }
+]
