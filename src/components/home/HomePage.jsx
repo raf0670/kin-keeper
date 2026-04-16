@@ -1,8 +1,10 @@
+"use client";
 import React from 'react';
 import HomeStatCard from './HomeStatCard';
 import friends from "../../../public/friends.json";
 import HomeFriendCard from './HomeFriendCard';
 import Link from 'next/link';
+import { useTimeline } from '../timeline/TimelineContext';
 // const promise = async() => {
 //     const res = await fetch("/friends.json");
 //     return res.json();
@@ -12,6 +14,8 @@ const HomePage = () => {
     // console.log(friends);
     const onTrackCount = friends.filter(friend => friend.status === "on-track").length;
     const overdueCount = friends.filter(friend => friend.status === "overdue").length;
+
+    const { interactions } = useTimeline();
 
     return (
         <div className='text-center w-11/12 sm:w-10/12 mx-auto mt-20'>
@@ -25,7 +29,7 @@ const HomePage = () => {
                 <HomeStatCard number={friends.length} text={"Total Friends"}></HomeStatCard>
                 <HomeStatCard number={onTrackCount} text={"On Track"}></HomeStatCard>
                 <HomeStatCard number={overdueCount} text={"Need Attention"}></HomeStatCard>
-                <HomeStatCard number={12} text={"Interactions This Month"}></HomeStatCard>
+                <HomeStatCard number={interactions.length} text={"Interactions This Month"}></HomeStatCard>
             </div>
 
             <h2 className='font-semibold text-start text-2xl mb-6'>Your Friends</h2>

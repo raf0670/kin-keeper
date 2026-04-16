@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <div className="">
       <HomePage></HomePage>
-      <ToastContainer></ToastContainer>
     </div>
   );
 }

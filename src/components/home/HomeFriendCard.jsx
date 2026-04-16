@@ -10,14 +10,14 @@ const statusColors = {
 const HomeFriendCard = ({ friend }) => {
     const { tags, status, days_since_contact, name, picture } = friend;
     return (
-        <div className='p-10 bg-white rounded-lg shadow-md flex flex-col gap-2 justify-center items-center'>
+        <div className='p-10 bg-white rounded-lg shadow-md flex h-full flex-col gap-2 justify-center items-center'>
             <Image src={picture} alt='' width={80} height={80} className='rounded-full'></Image>
 
             <h1 className='font-semibold text-2xl grow'>{name}</h1>
 
             <p className='text-[#64748B]'>{days_since_contact}d ago</p>
 
-            <div className='flex gap-2 font-semibold justify-center items-center'>
+            <div className='flex gap-2 grow font-semibold justify-center items-center'>
                 {
                     tags.map((tag, idx) => {
                         return (
@@ -29,7 +29,7 @@ const HomeFriendCard = ({ friend }) => {
                 }
             </div>
 
-            <p className={`text-white px-3 badge badge-sm pb-0.5 font-semibold rounded-full ${statusColors[status]}`}>{status}</p>
+            <p className={`text-white px-3 badge badge-sm pb-0.5 font-semibold rounded-full grow ${statusColors[status]}`}>{status}</p>
         </div>
     );
 };

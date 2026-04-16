@@ -1,5 +1,6 @@
 "use client";
 import { createContext, useContext, useState } from "react";
+import { toast } from "react-toastify";
 
 const TimelineContext = createContext();
 
@@ -14,6 +15,10 @@ export const TimelineProvider = ({ children }) => {
         }
 
         setInteractions([newEntry, ...interactions]);
+
+        // console.log("ypp");
+        
+        toast(`${person} has been interacted with on ${newEntry.date}!`);
     };
 
     return (
