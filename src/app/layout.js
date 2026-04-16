@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Kin Keeper",
+  title: "Keen Keeper",
   description: "The ultimate friend zone!",
 };
 
