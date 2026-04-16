@@ -30,10 +30,3 @@ Log "Quick Check-ins" (Call, Text, or Video) directly from a friend's profile. T
 The stats page features a beautiful, responsive **Donut Chart** built with Recharts. It provides a high-level breakdown of your communication habits (By Interaction Type), complete with rounded segments, hover tooltips, and custom branding.
 
 ---
-
-## 🛠️ Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
