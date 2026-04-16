@@ -24,12 +24,12 @@ const StatsCard = () => {
                         data={data}
                         cx="50%"
                         cy="45%"
-                        innerRadius={80}   // Creates the hole (Donut)
-                        outerRadius={110}  // Thickness
-                        paddingAngle={8}   // Creates the gaps between segments
-                        cornerRadius={10}  // Rounds the edges of segments
+                        innerRadius={80}
+                        outerRadius={110}
+                        paddingAngle={8}
+                        cornerRadius={10}
                         dataKey="value"
-                        stroke="none"      // Removes the default white border
+                        stroke="none"
                     >
                         {data.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
