@@ -118,5 +118,57 @@
         "bio": "Old teammate. We play occasional pickup games at the local court.",
         "goal": 14,
         "next_due_date": "2026-04-16"
+    },
+    {
+        "id": 9,
+        "name": "Arif Rahman",
+        "picture": "https://i.pravatar.cc/150?u=arif",
+        "status": "on-track",
+        "tags": [
+            "University"
+        ],
+        "bio": "Study partner from BUET. Great at System Design.",
+        "email": "email",
+        "days_since_contact": 4,
+        "goal": 14
+    },
+    {
+        "id": 10,
+        "name": "Samantha Reed",
+        "picture": "https://i.pravatar.cc/150?u=sam",
+        "status": "overdue",
+        "tags": [
+            "Colleague"
+        ],
+        "bio": "Former Lead Dev. Always has the best career advice.",
+        "email": "linkedin",
+        "days_since_contact": 45,
+        "goal": 30
+    },
+    {
+        "id": 11,
+        "name": "Nabil Ahmed",
+        "picture": "https://i.pravatar.cc/150?u=nabil",
+        "status": "on-track",
+        "tags": [
+            "Family"
+        ],
+        "bio": "Cousin who just started learning Web Dev.",
+        "email": "whatsapp",
+        "days_since_contact": 2,
+        "goal": 7
+    },
+    {
+        "id": 12,
+        "name": "Elena Volkov",
+        "picture": "https://i.pravatar.cc/150?u=elena",
+        "status": "overdue",
+        "tags": [
+            "Mentor"
+        ],
+        "bio": "Open source contributor. Need to ask about the new PR.",
+        "email": "email",
+        "days_since_contact": 22,
+        "goal": 15
     }
 ]
