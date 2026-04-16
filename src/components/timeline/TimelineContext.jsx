@@ -18,7 +18,7 @@ export const TimelineProvider = ({ children }) => {
 
         // console.log("ypp");
         
-        toast(`${person} has been interacted with on ${newEntry.date}!`);
+        toast(`${type} with ${person} on ${newEntry.date}!`);
     };
 
     return (
