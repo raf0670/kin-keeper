@@ -1,6 +1,8 @@
+"use client";
 import Image from 'next/image';
 import React from 'react';
 import { FaArchive, FaBell, FaPhoneAlt, FaRegCommentDots, FaTrashAlt, FaVideo } from 'react-icons/fa';
+import { useTimeline } from '../timeline/TimelineContext';
 
 const statusColors = {
     "on-track": "bg-green-500",
@@ -9,6 +11,8 @@ const statusColors = {
 };
 
 const DetailFriend = ({ friend }) => {
+    const { addInteraction } = useTimeline();
+
     return (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 py-8 lg:mt-20">
 
@@ -48,7 +52,7 @@ const DetailFriend = ({ friend }) => {
                     <button className="btn bg-white shadow-sm w-full justify-start gap-3 rounded-sm normal-case">
                         <FaArchive /> Archive
                     </button>
-                    <button className="btn bg-white shadow-sm w-full justify-start gap-3 rounded-sm normal-case bg-transparent hover:bg-red-50">
+                    <button className="btn bg-white shadow-sm w-full justify-start gap-3 rounded-sm normal-case hover:bg-red-50">
                         <FaTrashAlt /> Delete
                     </button>
                 </div>
@@ -82,15 +86,15 @@ const DetailFriend = ({ friend }) => {
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                     <h3 className="text-lg font-bold text-[#244D3F] mb-6">Quick Check-In</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                        <button className="flex flex-col items-center justify-center p-8 border border-gray-200 bg-gray-50 rounded-2xl hover:bg-emerald-50 transition-colors group">
+                        <button onClick={() => addInteraction("Call", friend.name)} className="flex flex-col items-center justify-center p-8 border border-gray-200 bg-gray-50 rounded-2xl hover:bg-emerald-50 transition-colors group">
                             <FaPhoneAlt className="text-2xl mb-2 text-gray-700 group-hover:text-[#244D3F]" />
                             <span className="font-medium text-gray-700">Call</span>
                         </button>
-                        <button className="flex flex-col items-center justify-center p-8 border border-gray-200 bg-gray-50 rounded-2xl hover:bg-emerald-50 transition-colors group">
+                        <button onClick={() => addInteraction("Text", friend.name)} className="flex flex-col items-center justify-center p-8 border border-gray-200 bg-gray-50 rounded-2xl hover:bg-emerald-50 transition-colors group">
                             <FaRegCommentDots className="text-2xl mb-2 text-gray-700 group-hover:text-[#244D3F]" />
                             <span className="font-medium text-gray-700">Text</span>
                         </button>
-                        <button className="flex flex-col items-center justify-center p-8 border border-gray-200 bg-gray-50 rounded-2xl hover:bg-emerald-50 transition-colors group">
+                        <button onClick={() => addInteraction("Video", friend.name)} className="flex flex-col items-center justify-center p-8 border border-gray-200 bg-gray-50 rounded-2xl hover:bg-emerald-50 transition-colors group">
                             <FaVideo className="text-2xl mb-2 text-gray-700 group-hover:text-[#244D3F]" />
                             <span className="font-medium text-gray-700">Video</span>
                         </button>
